@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="GraphucksTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GraphucksTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded_1" Background="Green">
+
+    <Grid>
+        <ContentControl x:Name="xamlContentControl"/>
+        <Slider Width="200" Minimum="0.01" Maximum="1" Value="0"  ValueChanged="Slider_ValueChanged"
+
+  LargeChange="0.01" SmallChange="0.001" StepFrequency="0.01" />
+
+    </Grid>
+</Page>

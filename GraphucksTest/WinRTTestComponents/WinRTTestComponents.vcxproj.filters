@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>15d9431e-78d8-460a-895c-f6997bf9611e</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="GraphucksComponentBase.cpp" />
+    <ClCompile Include="TextEffectComponent.cpp" />
+    <ClCompile Include="RadialGradientComponent.cpp" />
+    <ClCompile Include="MediaElementTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="GraphucksComponentBase.h" />
+    <ClInclude Include="TextEffectComponent.h" />
+    <ClInclude Include="RadialGradientComponent.h" />
+    <ClInclude Include="MediaElementTest.h" />
+  </ItemGroup>
+</Project>

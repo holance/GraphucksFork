@@ -1,0 +1,27 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SeaShurpTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:WinRTTestComponents="using:WinRTTestComponents"
+    x:Class="SeaShurpTest.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <WinRTTestComponents:MediaElementTest HorizontalAlignment="Left" VerticalAlignment="Top"  x:Name="meTest"/>
+        <StackPanel>
+            <Button Content="Load Media" x:Name="xamlButton"/>
+            <Button Content="Setbackbuffer size" x:Name="setSizeButton"/>
+            <WinRTTestComponents:TextEffectComponent HorizontalAlignment="Left" VerticalAlignment="Top"/>
+           
+            <StackPanel Orientation="Horizontal">
+                <WinRTTestComponents:RadialGradientComponent HorizontalAlignment="Left" VerticalAlignment="Top" Width="500" Height="500"/>
+               
+            </StackPanel>
+            
+            
+        </StackPanel>
+       
+    </Grid>
+</Page>

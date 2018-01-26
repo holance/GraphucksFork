@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{89f6f050-1cde-41e4-89f5-91e506dfc091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{1f229a31-fb55-4f80-8d9a-3699e2ede953}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\BrushBase.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\ImageBrush.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\LinearGradientBrush.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\RadialGradientBrush.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\SolidColorBrush.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\Ellipse.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\GeometryBase.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\Figure.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\PathGeometry.cpp" />
+    <ClCompile Include="Geometry\RoundedRectangle.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Media\Bitmap.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Media\Image.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\Pen.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\CombinedGeometry.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\FillCommand.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\StrokeCommand.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Brushes\GradientStopCollection.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SceneRoot.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\RenderContext.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Text\TextLayout.cpp" />
+    <ClCompile Include="Text\TextFormat.cpp" />
+    <ClCompile Include="UI\BorderElement.cpp" />
+    <ClCompile Include="UI\EllipseElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\PanelElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\RectangleElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\ShapeElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TextBlockElement.cpp" />
+    <ClCompile Include="UI\VisualElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects\EffectResource.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects\DropShadowEffect.cpp" />
+    <ClCompile Include="Effects\ElementEffect.cpp" />
+    <ClCompile Include="UI\StackPanel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Transform.cpp" />
+    <ClCompile Include="Core\CompositeTransform.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Resource.cpp" />
+    <ClCompile Include="Core\WinRT\XamlSceneRoot.cpp" />
+    <ClCompile Include="Core\WinRT\XamlSurfaceRenderer.cpp" />
+    <ClCompile Include="Geometry\LineSegment.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\BezierSegment.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry\ArcSegment.cpp" />
+    <ClCompile Include="Geometry\QuadraticBezierSegment.cpp" />
+    <ClCompile Include="UI\ImageElement.cpp" />
+    <ClCompile Include="UI\Delegate.cpp" />
+    <ClCompile Include="UI\RadialPanel.cpp" />
+    <ClCompile Include="UI\ContentControlElement.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\MultiContentPanelElement.cpp" />
+    <ClCompile Include="Effects\BlurEffect.cpp" />
+    <ClCompile Include="Effects\SaturationEffect.cpp" />
+    <ClCompile Include="Rendering\DrawImageCommand.cpp" />
+    <ClCompile Include="Rendering\DrawEffectCommand.cpp" />
+    <ClCompile Include="Rendering\DrawTextCommand.cpp" />
+    <ClCompile Include="UI\DependencyProperty.cpp" />
+    <ClCompile Include="UI\DependencyObject.cpp" />
+    <ClCompile Include="Media\MediaPlayer.cpp" />
+    <ClCompile Include="UI\MediaElement.cpp" />
+    <ClCompile Include="Brushes\StrokeStyle.cpp" />
+    <ClCompile Include="Core\Win32\Win32SceneRoot.cpp" />
+    <ClCompile Include="UI\PathElement.cpp" />
+    <ClCompile Include="Geometry\TransformedGeometry.cpp" />
+    <ClCompile Include="UI\Canvas.cpp" />
+    <ClCompile Include="Core\MatrixTransform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GraphucksComponent.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\BrushBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\ImageBrush.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\LinearGradientBrush.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\RadialGradientBrush.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\SolidColorBrush.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\Ellipse.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\GeometryBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\Figure.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\PathGeometry.h" />
+    <ClInclude Include="Geometry\RoundedRectangle.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Media\Bitmap.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Media\Image.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ISegment.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\Pen.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\CombinedGeometry.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\ClipCommand.h" />
+    <ClInclude Include="Rendering\DrawCommand.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\ExecutableBase.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\FillCommand.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\IRenderContext.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\RenderContext.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\RenderState.h" />
+    <ClInclude Include="Rendering\StrokeCommand.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\GradientStop.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Brushes\GradientStopCollection.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\GraphicsTypes.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SceneRoot.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\TextLayout.h" />
+    <ClInclude Include="Text\TextFormat.h" />
+    <ClInclude Include="UI\BorderElement.h" />
+    <ClInclude Include="UI\EllipseElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\PanelElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RectangleElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\ShapeElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TextBlockElement.h" />
+    <ClInclude Include="UI\VisualElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects\EffectResource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects\DropShadowEffect.h" />
+    <ClInclude Include="Effects\ElementEffect.h" />
+    <ClInclude Include="UI\StackPanel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Transform.h" />
+    <ClInclude Include="Core\GeneralTransform.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CompositeTransform.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Utils.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Resource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphucks.h" />
+    <ClInclude Include="Core\WinRT\XamlSceneRoot.h" />
+    <ClInclude Include="Core\WinRT\XamlSurfaceRenderer.h" />
+    <ClInclude Include="Geometry\LineSegment.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\BezierSegment.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry\ArcSegment.h" />
+    <ClInclude Include="Geometry\QuadraticBezierSegment.h" />
+    <ClInclude Include="Rendering\BrushTransformToBounds.h" />
+    <ClInclude Include="UI\ImageElement.h" />
+    <ClInclude Include="Brushes\StrokeStyle.h" />
+    <ClInclude Include="UI\Delegate.h" />
+    <ClInclude Include="UI\RadialPanel.h" />
+    <ClInclude Include="UI\ContentControlElement.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\MultiContentPanelElement.h" />
+    <ClInclude Include="Effects\BlurEffect.h" />
+    <ClInclude Include="Effects\SaturationEffect.h" />
+    <ClInclude Include="Rendering\DrawImageCommand.h" />
+    <ClInclude Include="Rendering\DrawEffectCommand.h" />
+    <ClInclude Include="Rendering\DrawTextCommand.h" />
+    <ClInclude Include="UI\DependencyProperty.h" />
+    <ClInclude Include="UI\DependencyObject.h" />
+    <ClInclude Include="UI\DependantValueEntry.h" />
+    <ClInclude Include="UI\DependencyPropertyUtils.h" />
+    <ClInclude Include="Media\MediaPlayer.h" />
+    <ClInclude Include="Media\D3DManagerLock.h" />
+    <ClInclude Include="UI\MediaElement.h" />
+    <ClInclude Include="Rendering\DX.h" />
+    <ClInclude Include="Core\Win32\Win32SceneRoot.h" />
+    <ClInclude Include="UI\PathElement.h" />
+    <ClInclude Include="Geometry\TransformedGeometry.h" />
+    <ClInclude Include="UI\Canvas.h" />
+    <ClInclude Include="Core\MatrixTransform.h" />
+  </ItemGroup>
+</Project>

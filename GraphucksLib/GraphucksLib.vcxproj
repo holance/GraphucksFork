@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug-Desktop|ARM">
+      <Configuration>Debug-Desktop</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Desktop|Win32">
+      <Configuration>Debug-Desktop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-Desktop|x64">
+      <Configuration>Debug-Desktop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-WinRT|ARM">
+      <Configuration>Debug-WinRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-WinRT|Win32">
+      <Configuration>Debug-WinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug-WinRT|x64">
+      <Configuration>Debug-WinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Desktop|ARM">
+      <Configuration>Release-Desktop</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Desktop|Win32">
+      <Configuration>Release-Desktop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-Desktop|x64">
+      <Configuration>Release-Desktop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-WinRT|ARM">
+      <Configuration>Release-WinRT</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-WinRT|Win32">
+      <Configuration>Release-WinRT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release-WinRT|x64">
+      <Configuration>Release-WinRT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{57d6775b-c2eb-4ac6-ae21-9ea2f8dae09e}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>GraphucksLib</ProjectName>
+    <RootNamespace>GraphucksLib</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>false</AppContainerApplication>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <WindowsAppContainer>false</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
+    <WindowsAppContainer>true</WindowsAppContainer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|x64'">
+    <GenerateManifest>false</GenerateManifest>
+    <OutDir>$(ProjectDir)Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <WarningLevel>Level4</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <WarningLevel>Level4</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineARM</TargetMachine>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>true</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>.\Core;.\Brushes;.\Effects;.\Geometry;.\Media;.\Rendering;.\Text;.\UI;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalOptions>/ignore:4264 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\MatrixTransform.h" />
+    <ClInclude Include="UI\Canvas.h" />
+    <ClInclude Include="Geometry\TransformedGeometry.h" />
+    <ClInclude Include="UI\PathElement.h" />
+    <ClInclude Include="Rendering\DX.h" />
+    <ClInclude Include="UI\MediaElement.h" />
+    <ClInclude Include="Media\D3DManagerLock.h" />
+    <ClInclude Include="Media\MediaPlayer.h" />
+    <ClInclude Include="UI\DependantValueEntry.h" />
+    <ClInclude Include="UI\DependencyObject.h" />
+    <ClInclude Include="UI\DependencyProperty.h" />
+    <ClInclude Include="Rendering\DrawTextCommand.h" />
+    <ClInclude Include="Rendering\DrawEffectCommand.h" />
+    <ClInclude Include="Rendering\DrawImageCommand.h" />
+    <ClInclude Include="Effects\BlurEffect.h" />
+    <ClInclude Include="Core\WinRT\XamlSurfaceRenderer.h" />
+    <ClInclude Include="Effects\SaturationEffect.h" />
+    <ClInclude Include="UI\DependencyPropertyUtils.h" />
+    <ClInclude Include="UI\MultiContentPanelElement.h" />
+    <ClInclude Include="UI\RadialPanel.h" />
+    <ClInclude Include="UI\Delegate.h" />
+    <ClInclude Include="Geometry\ArcSegment.h" />
+    <ClInclude Include="Geometry\BezierSegment.h" />
+    <ClInclude Include="Graphucks.h" />
+    <ClInclude Include="UI\ImageElement.h" />
+    <ClInclude Include="Media\Bitmap.h" />
+    <ClInclude Include="Rendering\BrushTransformToBounds.h" />
+    <ClInclude Include="Brushes\StrokeStyle.h" />
+    <ClInclude Include="UI\BorderElement.h" />
+    <ClInclude Include="Brushes\BrushBase.h" />
+    <ClInclude Include="Geometry\CombinedGeometry.h" />
+    <ClInclude Include="Core\CompositeTransform.h" />
+    <ClInclude Include="UI\ContentControlElement.h" />
+    <ClInclude Include="Rendering\DrawCommand.h" />
+    <ClInclude Include="Effects\DropShadowEffect.h" />
+    <ClInclude Include="Effects\EffectResource.h" />
+    <ClInclude Include="Effects\ElementEffect.h" />
+    <ClInclude Include="Geometry\Ellipse.h" />
+    <ClInclude Include="UI\EllipseElement.h" />
+    <ClInclude Include="Rendering\ExecutableBase.h" />
+    <ClInclude Include="Geometry\Figure.h" />
+    <ClInclude Include="Rendering\FillCommand.h" />
+    <ClInclude Include="Core\GeneralTransform.h" />
+    <ClInclude Include="Geometry\GeometryBase.h" />
+    <ClInclude Include="Brushes\GradientStop.h" />
+    <ClInclude Include="Brushes\GradientStopCollection.h" />
+    <ClInclude Include="Core\GraphicsTypes.h" />
+    <ClInclude Include="GraphucksComponent.h" />
+    <ClInclude Include="Rendering\ClipCommand.h" />
+    <ClInclude Include="Media\Image.h" />
+    <ClInclude Include="Brushes\ImageBrush.h" />
+    <ClInclude Include="Rendering\IRenderContext.h" />
+    <ClInclude Include="Geometry\ISegment.h" />
+    <ClInclude Include="Geometry\LineSegment.h" />
+    <ClInclude Include="Brushes\LinearGradientBrush.h" />
+    <ClInclude Include="UI\PanelElement.h" />
+    <ClInclude Include="Geometry\PathGeometry.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Brushes\Pen.h" />
+    <ClInclude Include="Geometry\QuadraticBezierSegment.h" />
+    <ClInclude Include="Brushes\RadialGradientBrush.h" />
+    <ClInclude Include="UI\RectangleElement.h" />
+    <ClInclude Include="Rendering\RenderContext.h" />
+    <ClInclude Include="Rendering\RenderState.h" />
+    <ClInclude Include="Core\Resource.h" />
+    <ClInclude Include="Geometry\RoundedRectangle.h" />
+    <ClInclude Include="Core\SceneRoot.h" />
+    <ClInclude Include="UI\ShapeElement.h" />
+    <ClInclude Include="Brushes\SolidColorBrush.h" />
+    <ClInclude Include="UI\StackPanel.h" />
+    <ClInclude Include="Rendering\StrokeCommand.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UI\TextBlockElement.h" />
+    <ClInclude Include="Text\TextFormat.h" />
+    <ClInclude Include="Text\TextLayout.h" />
+    <ClInclude Include="Core\Transform.h" />
+    <ClInclude Include="Core\Utils.h" />
+    <ClInclude Include="UI\VisualElement.h" />
+    <ClInclude Include="Core\WinRT\XamlSceneRoot.h" />
+    <ClInclude Include="Core\Win32\Win32SceneRoot.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\MatrixTransform.cpp" />
+    <ClCompile Include="UI\Canvas.cpp" />
+    <ClCompile Include="Geometry\TransformedGeometry.cpp" />
+    <ClCompile Include="UI\PathElement.cpp" />
+    <ClCompile Include="UI\MediaElement.cpp" />
+    <ClCompile Include="Media\MediaPlayer.cpp" />
+    <ClCompile Include="UI\DependencyObject.cpp" />
+    <ClCompile Include="UI\DependencyProperty.cpp" />
+    <ClCompile Include="Rendering\DrawTextCommand.cpp" />
+    <ClCompile Include="Rendering\DrawEffectCommand.cpp" />
+    <ClCompile Include="Rendering\DrawImageCommand.cpp" />
+    <ClCompile Include="Effects\BlurEffect.cpp" />
+    <ClCompile Include="Core\Resource.cpp" />
+    <ClCompile Include="Core\WinRT\XamlSurfaceRenderer.cpp" />
+    <ClCompile Include="Effects\SaturationEffect.cpp" />
+    <ClCompile Include="UI\MultiContentPanelElement.cpp" />
+    <ClCompile Include="UI\RadialPanel.cpp" />
+    <ClCompile Include="UI\Delegate.cpp" />
+    <ClCompile Include="Geometry\ArcSegment.cpp" />
+    <ClCompile Include="Geometry\BezierSegment.cpp" />
+    <ClCompile Include="UI\ImageElement.cpp" />
+    <ClCompile Include="Media\Bitmap.cpp" />
+    <ClCompile Include="Brushes\StrokeStyle.cpp" />
+    <ClCompile Include="UI\BorderElement.cpp" />
+    <ClCompile Include="Geometry\CombinedGeometry.cpp" />
+    <ClCompile Include="Core\CompositeTransform.cpp" />
+    <ClCompile Include="UI\ContentControlElement.cpp" />
+    <ClCompile Include="Effects\DropShadowEffect.cpp" />
+    <ClCompile Include="Effects\EffectResource.cpp" />
+    <ClCompile Include="Effects\ElementEffect.cpp" />
+    <ClCompile Include="Geometry\Ellipse.cpp" />
+    <ClCompile Include="UI\EllipseElement.cpp" />
+    <ClCompile Include="Geometry\Figure.cpp" />
+    <ClCompile Include="Rendering\FillCommand.cpp" />
+    <ClCompile Include="Geometry\GeometryBase.cpp" />
+    <ClCompile Include="Brushes\GradientStopCollection.cpp" />
+    <ClCompile Include="Media\Image.cpp" />
+    <ClCompile Include="Brushes\ImageBrush.cpp" />
+    <ClCompile Include="Geometry\LineSegment.cpp" />
+    <ClCompile Include="Brushes\LinearGradientBrush.cpp" />
+    <ClCompile Include="UI\PanelElement.cpp" />
+    <ClCompile Include="Geometry\PathGeometry.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-WinRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug-Desktop|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-WinRT|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release-Desktop|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Brushes\Pen.cpp" />
+    <ClCompile Include="Geometry\QuadraticBezierSegment.cpp" />
+    <ClCompile Include="Brushes\RadialGradientBrush.cpp" />
+    <ClCompile Include="UI\RectangleElement.cpp" />
+    <ClCompile Include="Rendering\RenderContext.cpp" />
+    <ClCompile Include="Geometry\RoundedRectangle.cpp" />
+    <ClCompile Include="Core\SceneRoot.cpp" />
+    <ClCompile Include="UI\ShapeElement.cpp" />
+    <ClCompile Include="Brushes\SolidColorBrush.cpp" />
+    <ClCompile Include="Brushes\BrushBase.cpp" />
+    <ClCompile Include="UI\StackPanel.cpp" />
+    <ClCompile Include="Rendering\StrokeCommand.cpp" />
+    <ClCompile Include="UI\TextBlockElement.cpp" />
+    <ClCompile Include="Text\TextFormat.cpp" />
+    <ClCompile Include="Text\TextLayout.cpp" />
+    <ClCompile Include="Core\Transform.cpp" />
+    <ClCompile Include="UI\VisualElement.cpp" />
+    <ClCompile Include="Core\WinRT\XamlSceneRoot.cpp" />
+    <ClCompile Include="Core\Win32\Win32SceneRoot.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
